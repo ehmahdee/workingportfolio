@@ -1,0 +1,44 @@
+.icon-container {
+    font-size: 70px;
+    margin-left: 70%;
+    margin-top: 5%;
+  }
+  
+  .icon-circle {
+    font-size: 50px;
+    position: relative;
+    width: 400px; /* Adjust the width and height as per your requirements */
+    height: 400px;
+    animation: circular 8s linear infinite;
+    margin-left: 80%; /* Add some margin to position it to the right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes circular {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .icon-circle > div {
+    /* Adjust these properties to evenly distribute the icons in a circle */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 50px; /* Adjust the size of each icon container as needed */
+    height: 50px;
+  }
+  
+  /* Adjust these properties to evenly distribute the icons in a circle */
+  .icon-circle > div:nth-child(1) { transform: rotate(0deg); }
+  .icon-circle > div:nth-child(2) { transform: rotate(60deg); }
+  .icon-circle > div:nth-child(3) { transform: rotate(120deg); }
+  .icon-circle > div:nth-child(4) { transform: rotate(180deg); }
+  .icon-circle > div:nth-child(5) { transform: rotate(240deg); }
+  .icon-circle > div:nth-child(6) { transform: rotate(300deg); }
